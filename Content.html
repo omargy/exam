@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Basic Content</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="animatedmen.css">
+    <script defer src="animatedmen.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="logo">
+            <img src="OmmisDe-01.png" alt="ommalogo">
+            <br>
+            <br>
+            <br>
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="ux.html">Ux</a></li>
+                    <li><a href="Content.html">Content</a></li>
+                    <li><a href="Animation.html">Animation</a></li>
+                </ul>
+            </nav>
+                        <img src="Banner-01.png" alt="Banner" class="responsive">
+
+        </div>
+
+        <div class="Head1">
+            <h3> Here you can see both of my assignments from Basic content where i learnd about some rules of film making and the assignments were about that.</h3>
+        </div>
+        <div id="content">
+            <button class="accordion">03.01: A Story without Words
+            </button>
+            <div class="panel">
+                <p>
+                    A story without words was a great assignment but since i didnt have a group member it was really hard to record and i had to get a friend to act for me last minute and it was a horendous end result for me since i had alot of ideas but since i was alone i could not use those ideas and had to pull something out of my hat, but i did learn how premier pro worked so it taught me something.
+                </p>
+                <video  class="viddi" controls>
+                    <source src="Content/Catfish.mp4" type="video/mp4"
+                            class="responsive"></video>
+            </div>
+            <br>
+            <br>
+            <button class="accordion">03.02: A Bicycle Guide for non-Danes
+            </button>
+            <div class="panel">
+                <p>
+                    The bicycle guide was pretty fun to do and i was in charge of the video, sound and cutting the material since my partner lived so far away and we could barely meet up so i just recorded myself and he made the website and since its so late right now i cant get the link to the website but i will put the video here since i didnt do anything on the website.
+                </p>
+                <video class="viddi" controls>
+                    <source src="Content/BikeCopen.mp4" type="video/mp4" class="responsive"></video>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer"><a href="aboutme.html" style="border:solid 2px; padding: 5px; margin-bottom: 5px; color: gold;">About Me.</a></div>
+
+
+        <script type="text/javascript">
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+</body></html>
