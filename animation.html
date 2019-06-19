@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>basic Animation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="animatedmen.css">
+    <script defer src="animatedmen.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="logo">
+            <img src="OmmisDe-01.png" alt="ommalogo">
+                    <br>
+            <br>
+            <br>
+        <h1>My Portfolio</h1>
+    </div>
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="Ux.html">Ux</a></li>
+                    <li><a href="Content.html">Content</a></li>
+                    <li><a href="Animation.html">Animation</a></li>
+                </ul>
+            </nav>
+                        <img src="Banner-01.png" alt="Banner" class="responsive">
+
+        </div>
+
+        <div class="Head1">
+            <h3> Here you can see my animation assignments where we learned about css, javascript and how to make characters.</h3>
+        </div>
+        <div id="content">
+            <button class="accordion">02.01: CSS and Javascript
+            </button>
+            <div class="panel">
+                <p> in Css and Javascript i started by making a github profile and then i had to take a character from the internet and make her do things and here underneath is the link where you can make the character do couple of things.
+                </p>
+                <a href="http://unnthorinn.eu/Animatedstick/animatedstick.html">Animated stick figure</a>
+                <br>
+            </div>
+            <br>
+            <br>
+            <button class="accordion">02.02: Character design, storytelling
+            </button>
+            <div class="panel">
+                <p>
+                the character design and storytelling was cancelled if i remember right but i did some characters and a background before that and made a sprite sheet of a walking man in Illustrator but i had some problems putting the sprite sheet here so i decided not to put it in.
+                </p>
+                <br>
+            <img src="uif/Animations/fatherandSon.jpg" alt="fatherandson" class="responsive">
+                <img src="uif/Animations/backgroundwalk.jpg" alt="background" class="responsive">
+            </div>
+            <br>
+            <br>
+            <button class="accordion">02.03: More Javascript
+            </button>
+            <div class="panel">
+                <p>
+                in more javascript i was supposed to choose two projects and bring them to life and i decided to choose something that could be of use in my websites so i chose animated menu and i decided to use it as my index site.
+                    <br>
+                    <a href="#">Animated menu</a>
+                    <p>
+                i also did a calulator which was a good experience.
+                <a href="http://www.jbatkea.rf.gd/calculator/calculator.html?i=1">calculator</a>
+                </p>
+            </div>
+            <br>
+            <br>
+            <button class="accordion">02.04: Group project
+            </button>
+            <div class="panel">
+                <p>
+                This group project was a huge mess since we could never decide what to do and i dont even know if the project is finished yet. we were supposed to do a interactive poster for a film of our choosing and we chose E.T, i did what i was tasked with and that was making the bikes and the police car, i also made some gifs that people didnt want to use.
+                </p>
+                <img src="uif/Et/bikeBET.png" alt="bike2" class="responsive"> 
+                <img src="uif/Et/bikeET.png" alt="bike1" class="responsive">
+                <img src="uif/Et/PoliceGiphydd.png" alt="bike1" class="responsive">
+                
+            </div>
+        </div>
+        <div class="footer"><a href="aboutme.html" style="border:solid 2px; padding: 5px; margin-bottom: 5px; color: gold;">About Me.</a></div>
+    </div>
+
+
+    <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body></html>
