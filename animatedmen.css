@@ -1,0 +1,388 @@
+/* Animated menu */
+html,
+body {
+    height: 100%;
+    color: aqua;
+}
+
+body {
+    background: #00BFFF;
+    font-family: sans-serif;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    user-select: none;
+    transform: translate3d(25px, -25px, 0);
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+
+nav.open {
+    transform: translate3d(0, 0, 0);
+}
+
+.circle {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font: 25px sans-serif;
+    line-height: 40px;
+    padding-top: 10px;
+    border-radius: 250px;
+    transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+    pointer-events: none;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.5s, transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s, transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+
+.circle div {
+    transform: rotate(180deg);
+}
+
+.open .circle {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.l1 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #FF0000;
+    transition-delay: 0s;
+}
+
+.open .l1 {
+    transition-delay: 0s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l1:hover {
+    color: white;
+    transition-delay: 0s;
+}
+
+.open .l1:active {
+    color: tomato;
+}
+
+.open .l1.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l2 {
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    background: #E3192F;
+    transition-delay: 0.1s;
+}
+
+.open .l2 {
+    transition-delay: 0.1s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l2:hover {
+    color: white;
+    transition-delay: 0s;
+}
+
+.open .l2:active {
+    color: #ff7a39;
+}
+
+.open .l2.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l3 {
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    background: #001571;
+    transition-delay: 0.2s;
+}
+
+.open .l3 {
+    transition-delay: 0.2s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l3:hover {
+    color: white;
+    transition-delay: 0s;
+}
+
+.open .l3:active {
+    color: #ff912b;
+}
+
+.open .l3.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l4 {
+    color: aqua;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    background: #000000;
+    transition-delay: 0.3s;
+}
+
+.open .l4 {
+    transition-delay: 0.3s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l4:hover {
+    color: white;
+    transition-delay: 0s;
+}
+
+.open .l4:active {
+    color: #000000;
+}
+
+.open .l4.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l5 {
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    background: #ffc00e;
+    transition-delay: 0.4s;
+}
+
+.open .l5 {
+    transition-delay: 0.4s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l5:hover {
+    color: aqua;
+    transition-delay: 0s;
+}
+
+.open .l5:active {
+    color: white;
+}
+
+.open .l5.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.toggle {
+    line-height: 100px;
+    padding: 0;
+    width: 100px;
+    background: gray;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition-delay: 0s;
+}
+
+.open .toggle {
+    transform: rotate3d(0, 0, 1, 0deg);
+}
+
+.toggle:hover {
+    color: gold;
+}
+
+.toggle:active {
+    color: white;
+
+    transform: scale(0.9);
+    transition-duration: 0s;
+}
+
+
+/* grid*/
+.grid {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo logo"
+        "container container"
+        "Head1 Head1"
+        "content content"
+        "footer footer";
+}
+
+/* Logo */
+.logo {
+    grid-area: logo;
+    height: auto;
+    max-width: 100%;
+    padding: 3px;
+}
+
+/* content */
+.Head1 {
+    grid-area: Head1;
+    font-weight: 100;
+    color: white;
+    padding: 32px
+}
+
+#content {
+    grid-area: content;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* accordion */
+.accordion {
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 99%;
+    border: 2px solid gold;
+    text-align: left;
+    transition: 0.6s;
+    outline: none;
+    font: 20px Lato, sans-serif;
+}
+
+.active,
+.accordion:hover {
+    background-color: purple;
+}
+
+.accordion:after {
+    content: '\002b';
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+
+.panel {
+    color: black;
+    padding: 20px;
+    width: 90%;
+    border: 7px solid gold;
+    transition: 0.4s;
+    text-align: left;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.container {
+    grid-area: container;
+    padding: 0px;
+}
+
+.footer {
+    grid-area: footer;
+    padding-top: 50px;
+}
+
+.container nav.menu {
+    position: relative;
+    display: inline-block;
+    left: 0px;
+    width: 90%;
+    background: transparent;
+    height: 60px;
+    box-shadow: 0 2px 2px 2px gold;
+}
+
+nav.menu ul {
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+nav.menu ul li {
+    width: 20%;
+    float: left;
+    border: solid #00BFFF;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1.0s ease;
+}
+
+nav.menu ul li:hover,
+nav.mob ul li:hover {
+    background: gold;
+}
+
+nav.menu ul li:active,
+nav.mob ul li:active {
+    background: gold;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.footer {
+    color: purple;
+}
+
+h1 {
+    position: relative;
+    color: blue;
+    text-align: center;
+
+}
+.viddi{
+    width: 80%;
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .grid {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "logo logo"
+            "container container"
+            "Head1 Head1"
+            "content content"
+            "footer footer";
+    }
+}
