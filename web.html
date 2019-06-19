@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="animatedmen.css">
+    <script defer src="animatedmen.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="logo">
+            <img src="OmmisDe-01.png" alt="ommalogo">
+            <br>
+            <br>
+            <br>
+        <h1>My Portfolio</h1>
+        </div>
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="Ux.html">Ux</a></li>
+                    <li><a href="Content.html">Content</a></li>
+                    <li><a href="Animation.html">Animation</a></li>
+                </ul>
+            </nav>
+            <img src="Banner-01.png" alt="Banner" class="responsive">
+        </div>
+
+        <div class="Head1">
+            <h3> Here you can see some of my assignments from basic web where we started to learn the basics of coding.</h3>
+        </div>
+        <div id="content">
+            <button class="accordion"> 01.01: Content first
+            </button>
+            <div class="panel">
+                <p> The first assignment we did that was not in the intro week was the moodboard.</p>
+                <img src="BasicWeb/DoodleAssignmentmediuml.jpg" alt="moodboard" class="responsive">
+                <br>
+                <p>
+                    The next assignment was alittle harder since we had to make our own content for our website but with a given style, i got doodle and drawing as a style and here are some of the photos i did.
+                </p>
+                <img src="BasicWeb/archertindur-medium.jpg" alt="archermountain" class="responsive">
+                <br>
+                <img src="BasicWeb/thorandfenrir.jpg" alt="thorandfenrir" class="responsive">
+                <br>
+                <img src="BasicWeb/forestcitymedium.jpg" alt="forestcity" class="responsive">
+                <br>
+                <img src="BasicWeb/OmarsDesign.jpg" alt="thorandfenrir" class="responsive">
+            </div>
+            <br>
+            <br>
+            <button class="accordion">01.02: Mobile first
+
+            </button>
+            <div class="panel">
+                <p> In mobile first i had to use the content i already had and put it up on my website and make the website for a mobile first and make responsive so it doesnt look shit in a computer.</p>
+                <a href="http://unnthorinn.eu/mobilefirst/index.html">
+                Mobile first website</a>
+            </div>
+            <br>
+            <br>
+            <button class="accordion">01.03: User Interface Design
+            </button>
+            <div class="panel">
+                <p>
+                in user Interface Design i learned to plan more since it can be very difficult for me to know where to start and here i learned how to use the magical app XD. Its an app i didnt even know exicted but there i learned how to make a prototype of my websites before i start coding, since it can be difficult to know where to start to begin with. And there you can also surf between all of your sites by simlpy linking them.
+                </p>
+                <br>
+                <img src="uif/Home.jpg" alt="home"
+                     class="responsive">
+                <br>
+                <img src="uif/Design.jpg" alt="design"
+                     class="responsive">
+                <br>
+                <img src="uif/About%20me.jpg" alt="aboutme"
+                     class="responsive">
+                <br>
+                <img src="uif/My%20style.jpg" alt="style"
+                     class="responsive">
+                <br>
+                <img src="uif/Photos.jpg" alt="photos"
+                     class="responsive">
+                <img src="uif/Styletile.jpg" alt="styletile"
+                     class="responsive">
+            </div>
+            <br>
+            <br>
+            <button class="accordion">01.04 Responsive Web Design
+            </button>
+            <div class="panel">
+                <p>
+                In the responsive web design project i kind of misunderstood and made a whole new website and deleted the previous so i just had to put her back up but here i learned how to make a website responsive so it looks good on both the phone and computer, i liked the first site better but i just liked to test myself and make some changes and try to challange myself in coding.
+                    <br>
+                    <a href="http://unnthorinn.eu">Responsive website.</a>
+                </p>
+            </div>
+            <p>
+        
+            </p>
+        </div>
+         <div class="footer"><a href="aboutme.html" style="border:solid 2px; padding: 5px; margin-bottom: 5px; color: gold;">About Me.</a></div>
+    </div>
+
+
+    <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body></html>
+
