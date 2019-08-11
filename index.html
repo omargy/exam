@@ -2,29 +2,85 @@
 <html lang="en">
 
 <head>
-    <title>BurgerMenu</title>
     <meta charset="utf-8">
+    <title> About me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="animatedmen.css">
-
     <script defer src="animatedmen.js"></script>
 </head>
 
 <body>
-    <nav class="navbar open">
-        <a href="Animation.html" class="circle l1">
-            <div>Portolio</div>
-        </a>
-        <a href="Content.html" class="circle l2">
-            <div>Portfolio</div>
-        </a>
-        <a href="Ux.html" class="circle l3">
-            <div>Portfolio</div>
-        </a>
-        <a href="aboutme.html" class="circle l4">
-            <div>About me</div>
-        </a>
-        <a class="circle l5 toggle">
-            Click
-        </a>
-    </nav>
-</body></html>
+    <div class="grid">
+        <div class="logo">
+            <img src="OmmisDe-01.png" alt="ommalogo">
+            <a href="index.html" id="about">About Me.</a>
+        </div>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="Ux.html">Ux</a></li>
+                    <li><a href="Content.html">Content</a></li>
+                    <li><a href="Animation.html">Animation</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="Head1">
+            <img src="icelandX.png" alt="iceland" class="responsive" id="island">
+
+            <h3> Couple of things about me that are nice to know</h3>
+        </div>
+        <div id="content">
+            <button class="accordion">Where am i from?
+            </button>
+            <div class="panel">
+                <p> As seem from above im from a little town in east Iceland with around thousand people and there is not much to do there and not alot of job opportunities except for working in a aluminum factory, fish or at a small shop/company so i wanted to try to move to a bigger city to get a education so i wont have to get stuck in a job like that and hopefully i can be my own boss.
+                    <br>
+                    <img src="Holmatindur.jpg" alt="holmatindur" class="responsive">
+                </p>
+            </div>
+            <br>
+            <br>
+            <button class="accordion">Who am i?
+            </button>
+            <div class="panel">
+                <p>
+                    Im a 24 year old man who's soon becoming a father and i like to play and watch football and i also have interest in fitness, i have thought long and hard what i would like to do with my life and finally i found something i can actually study since ive never been good at school. I wouldnt say im 100% sure that my study here will become my future job but im as sure as i will ever be that i found something i do have interest in.
+                </p>
+                <br>
+            </div>
+            <br>
+            <br>
+            <button class="accordion">My experience
+            </button>
+            <div class="panel">
+                <p>
+                    i do have alot of work experience but that experience doesnt really matter here since ive mostly worked in fish, aluminum factory and as a some sort of a vikar. But i started working when i was 14 with school and ive done it ever since, either with school or full time, but my experience isnt much in multimedia designing, i was in a photoshop class for a semester once and thats probably the only experience i had before i came to this school.
+                </p>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+    <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
